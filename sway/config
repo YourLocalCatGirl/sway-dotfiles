@@ -1,0 +1,16 @@
+## Info
+# Default config: https://github.com/swaywm/sway/blob/master/config.in
+# Useful information: https://wiki.archlinux.org/title/Sway
+# Sway Manual: https://man.archlinux.org/listing/extra/sway/
+# Location for this config: ~/.config/sway/config
+# ~ = home folder
+##
+
+# wallpaper
+output * bg /home/sara/.config/sway/background/anchors_of_life_small.png fill
+
+include @sysconfdir@/sway/config.d/*
+# include custom sway config
+include "${XDG_CONFIG_HOME:-$HOME/.config}/sway/*.conf"
+
+
